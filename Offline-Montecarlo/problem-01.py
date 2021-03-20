@@ -40,11 +40,12 @@ for item in trials:
     print()
     print()
 
-    plt.scatter(hit_list_x, hit_list_y, color="red")
-    plt.scatter(miss_list_x, miss_list_y, color="green")
+    plt.scatter(hit_list_x, hit_list_y, color="red",label="Hits")
+    plt.scatter(miss_list_x, miss_list_y, color="green",label="Misses")
     plt.title(f" Iterations : {item}")
     plt.xlabel("X-Axis")
     plt.ylabel("y-Axis")
+    plt.legend(loc="upper right")
     plt.show()
 
 plt.bar(trials, pi_val, color="red", width=300)

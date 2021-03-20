@@ -28,11 +28,12 @@ for item in trials:
 
     print(f"Area for {item} trials is {area} ")
 
-    plt.scatter(hit_x, hit_y, color="red")
-    plt.scatter(miss_x, miss_y, color="green")
+    plt.scatter(hit_x, hit_y, color="red", label="Hits")
+    plt.scatter(miss_x, miss_y, color="green", label="Misses")
     plt.title(f" Iterations : {item}")
     plt.xlabel("X-Axis")
     plt.ylabel("y-Axis")
+    plt.legend(loc="upper right")
     plt.show()
 
 
