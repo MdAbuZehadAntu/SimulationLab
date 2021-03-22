@@ -4,7 +4,7 @@ import math
 
 trials = [100, 1000, 5000, 10000]
 x1, x2 = 0, 3
-y1, y2 = 0, 5
+y1, y2 = 0, 2*x2+2
 for item in trials:
     hits = 0
     hit_x = list()
@@ -15,7 +15,7 @@ for item in trials:
         x = random.uniform(x1, x2)
         y = random.uniform(y1, y2)
 
-        if y <= x + 2:
+        if y <= 2*x + 2:
             hits += 1
             hit_x.append(x)
             hit_y.append(y)
