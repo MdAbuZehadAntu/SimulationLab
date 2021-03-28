@@ -1,7 +1,7 @@
 import math
 import random
 import matplotlib.pyplot as plt
-
+el=[]
 for it in [100,1000,5000,10000]:
     f1=0
     f2=0
@@ -25,6 +25,9 @@ for it in [100,1000,5000,10000]:
 
     intg=intg2+intg1
     p=p1+p2
+    el.append(p)
 
     print(
         f"For {it} iteration : integral val = {intg} and error = {p}")
+plt.plot([100, 1000, 5000, 10000], el)
+plt.show()
