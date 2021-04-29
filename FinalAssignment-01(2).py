@@ -33,9 +33,10 @@ class Reaction:
             print(f"C1 : {self.A}")
             print(f"C2 : {self.B}")
             print(f"C3 : {self.C}")
+            print()
 
             if abs(self.A - temp_a) < self.threshold and abs(self.B - temp_b) < self.threshold and abs(
-                    self.B - temp_c) < self.threshold:
+                    self.C - temp_c) < self.threshold:
                 break
 
 

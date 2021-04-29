@@ -44,8 +44,11 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
+
 
                     elif i == 0 and 1 <= j < len(self.arr) - 1:
                         k = 0
@@ -60,8 +63,10 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
 
                     elif i == len(self.arr) - 1 and 1 <= j < len(self.arr) - 1:
                         k = 0
@@ -76,8 +81,10 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
 
                     elif j == 0 and 1 <= i < len(self.arr) - 1:
                         k = 0
@@ -92,8 +99,10 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
 
                     elif j == len(self.arr) - 1 and 1 <= i < len(self.arr) - 1:
                         k = 0
@@ -108,8 +117,10 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
 
                     elif i == j and (i == 0 or i == len(self.arr) - 1):
 
@@ -121,8 +132,10 @@ class Array:
                                 array[i][j] = 0
                             elif c == 2 and self.arr[i][j] == 1:
                                 array[i][j] = 1
-                            if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                            elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                                 array[i][j] = 1
+                            else:
+                                array[i][j] = self.arr[i][j]
 
                         elif i == len(self.arr) - 1:
                             c = self.arr[i][j - 1] + self.arr[i - 1][j - 1] + self.arr[i - 1][j]
@@ -132,8 +145,10 @@ class Array:
                                 array[i][j] = 0
                             elif c == 2 and self.arr[i][j] == 1:
                                 array[i][j] = 1
-                            if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                            elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                                 array[i][j] = 1
+                            else:
+                                array[i][j] = self.arr[i][j]
 
                     elif i == 0 and j == len(self.arr) - 1:
                         c = self.arr[i][j - 1] + self.arr[i + 1][j - 1] + self.arr[i + 1][j]
@@ -143,8 +158,10 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
 
                     elif i == len(self.arr) - 1 and j == 0:
                         c = self.arr[i - 1][j] + self.arr[i - 1][j + 1] + self.arr[i][j + 1]
@@ -154,8 +171,10 @@ class Array:
                             array[i][j] = 0
                         elif c == 2 and self.arr[i][j] == 1:
                             array[i][j] = 1
-                        if (c == 2 or c == 3) and self.arr[i][j] == 0:
+                        elif (c == 2 or c == 3) and self.arr[i][j] == 0:
                             array[i][j] = 1
+                        else:
+                            array[i][j] = self.arr[i][j]
 
             self.arr = array.copy()
 
