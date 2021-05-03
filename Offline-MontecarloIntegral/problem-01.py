@@ -14,10 +14,10 @@ for trial in trials:
         fx_list.append(fx)
         f2x_list.append(fx**2)
     avg_fx=sum(fx_list)/len(fx_list)
-    print(avg_fx)
+    # print(avg_fx)
     avg_f2x=sum(f2x_list)/len(f2x_list)
-    print(avg_f2x)
-    quit()
+    # print(avg_f2x)
+    # quit()
     integral_val=avg_fx*abs(x2-x1)
     err= (abs(x2-x1)/math.sqrt(trial))*math.sqrt(avg_f2x-avg_fx**2)
 
