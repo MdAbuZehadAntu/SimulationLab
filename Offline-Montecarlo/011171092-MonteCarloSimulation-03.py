@@ -20,7 +20,7 @@ for n in trials:
 
         if x <= 4:
 
-            if y ** 2 <= 4 * x:  # changes
+            if 4*y <= x**2:  # changes
                 hit += 1
                 hit_x.append(x)
                 hit_y.append(y)

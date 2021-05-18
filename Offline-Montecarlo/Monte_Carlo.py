@@ -1,7 +1,7 @@
 import random
 import math
 import matplotlib.pyplot as plt
-l=[100,1000,5000,10000]
+l=[1000,5000,10000]
 pi=[]
 for item in l:
     hits=0
@@ -10,10 +10,10 @@ for item in l:
     miss_lx=[]
     miss_ly=[]
     for i in range(item):
-        x=random.uniform(1,8)
-        y=random.uniform(1,9)
+        x=random.uniform(2,8)
+        y=random.uniform(0,8)
 
-        if math.sqrt(math.pow((3-x),2)+(5-y)**2)<=1.5:
+        if math.sqrt(math.pow((5-x),2)+(5-y)**2)<=2:
             hits+=1
             hit_lx.append(x)
             hit_ly.append(y)
